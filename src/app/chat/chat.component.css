@@ -38,10 +38,21 @@ header .ico img{
 footer{
     width: 100%;
     background: green;
-    height: 15%;
+    height: 13%;
     overflow: hidden;
+}
+
+footer .answers{
+    background: #E0E0E0;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    padding: 0.6rem;
+    box-sizing: border-box;
+    height: 100%;
+}
+footer .answers img{
+    width: 2rem;
 }
 
 section{    
