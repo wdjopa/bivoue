@@ -9,8 +9,8 @@
 }
 
 header{
-    background: white;
-    height: 10%;
+    background: whitesmoke;
+    height: 12%;
     width: 100%;
     overflow: hidden;
     display: flex;
@@ -28,7 +28,8 @@ header .ico{
     justify-content: center;
     align-items: center;
     height: 100%;
-    background: red;
+    width: 2.3rem;
+    padding-top: 0.5rem;
 }
 header .ico img{
     width: 80%;
