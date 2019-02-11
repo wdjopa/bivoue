@@ -1,0 +1,30 @@
+
+.game{
+    background: url("../assets/img/background.jpg");
+    background-size: cover;
+    width: 100vw;
+    overflow: hidden;
+    height: 100vh;
+}
+.container{
+    height: 100%;
+    width: 100%;
+    background: #0E6B2EAA;
+    display: flex;
+    flex-direction: column;
+    padding: 0 3rem;
+    box-sizing: border-box
+}
+.header{
+    height: 13vh;
+    width: 100%;
+}
+app-header{
+    align-items: center;
+    display: flex;
+    width: 100%;
+}
+.plateau{
+    height: 85vh;
+    border-top: 1px solid white;
+}

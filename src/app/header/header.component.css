@@ -1,0 +1,34 @@
+.entete{
+    height: 13vh;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+.entete .left{
+    font-family: 'Audiowide', cursive;
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 1.7rem;
+}
+.entete .left img{
+    width: 2.4rem;
+    margin-right: 3rem;
+}
+.entete .right{
+    font-family: 'Baumans';
+    font-size: 1.3rem;
+    cursor: pointer;
+    padding: 2rem; 
+    border-radius: 2px;
+    transition: all .1s ease;
+}
+.entete .right:hover{
+    background: #ffffff11;
+}

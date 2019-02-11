@@ -1,0 +1,18 @@
+img{
+    width: 100%;
+}
+:host.carte-joueur .carte img{
+    width: 7rem;
+}
+:host.centre .carte{
+    width: 10rem;
+    background: whitesmoke;
+    height: 13rem;
+    border-radius: 2px;
+    box-shadow: 0px 0px 10px black;
+}
+:host:hover img{
+    border: 2px solid forestgreen;
+    border-radius: 3px;
+    box-shadow: 0px 0px 4px forestgreen;
+}

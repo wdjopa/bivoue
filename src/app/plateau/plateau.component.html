@@ -1,0 +1,35 @@
+<div class="plateau">
+  <div class="adversaires">
+    <div class="arrow left">
+      <img style="transform: rotate(180deg)" src="../../assets/img/arrow.svg" alt="">
+    </div>
+    <app-adversaires *ngFor="let adversaire of adversaires" [name]="adversaire.name" [cartes]="adversaire.cartes"></app-adversaires>
+    <div class="arrow right">
+      <img src="../../assets/img/arrow.svg" alt="">
+    </div>
+  </div>
+  
+  <div class="milieu">
+    <div class="left">
+      <app-pioche></app-pioche>
+    </div>
+    <div class="centre">
+      <app-carte [ngClass]="{'centre':true}" [number]="'J'" [color]="'d'"></app-carte>
+    </div>
+    <div></div>
+  </div>
+  
+  <div class="joueur">
+    <div class="arrow left">
+      <img style="transform: rotate(180deg)" src="../../assets/img/arrow.svg" alt="">
+    </div>
+    <app-joueur></app-joueur>
+    <div class="arrow right">
+      <img src="../../assets/img/arrow.svg" alt="">
+    </div>
+  </div>
+</div>
+
+<div class="chat">
+  <app-chat></app-chat>
+</div>
