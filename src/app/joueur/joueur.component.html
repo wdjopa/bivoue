@@ -1,1 +1,22 @@
-<app-carte *ngFor="let carte of cartes" [ngClass]="{'carte-joueur': true}" [number]="carte.number" [color]="carte.color"></app-carte>
+<app-carte *ngFor="let carte of this.cartes" [ngClass]="{'carte-joueur': true}" (click)="jouer(carte)" [number]="carte.number" [motif]="carte.motif"></app-carte>
+
+<div class="pick">
+    <span class="cover"></span>
+    <div class="container">
+        <h3 class="titre">Choisissez un motif</h3>
+        <div class="motifs">
+            <div class="motif h" (click)="command('h')">
+                <img src="../../assets/Cartes/h.svg" alt="Heart playing card game">
+            </div>
+            <div class="motif s" (click)="command('s')">
+                <img src="../../assets/Cartes/s.svg" alt="Spade playing card game">
+            </div>
+            <div class="motif c" (click)="command('c')">
+                <img src="../../assets/Cartes/c.svg" alt="Club playing card game">
+            </div>
+            <div class="motif d" (click)="command('d')">
+                <img src="../../assets/Cartes/d.svg" alt="Diamond playing card game">
+            </div>
+        </div>
+    </div>
+</div>

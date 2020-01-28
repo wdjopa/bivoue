@@ -1,0 +1,26 @@
+<div class="liste">
+  <div class="game" *ngFor="let cardGame of this.listCardGame(); trackBy: trackCardGame">
+    <div class="card">
+      <h2 class="titre">{{ cardGame.titre }}</h2>
+      <div class="corps">
+        <div class="item">
+          <span class="flaticon-casino img"></span>
+          <span class="valeur">{{ cardGame.parties }}</span>
+        </div>
+        <div class="item">
+          <span class="flaticon-like img"></span>
+          <span class="valeur">{{ cardGame.like }}</span>
+        </div>
+        <div class="item">
+          <span class="flaticon-dislike img"></span>
+          <span class="valeur">{{ cardGame.dislike }}</span>
+        </div>
+      </div>
+      <div [className]="(this.mode == 'solo') ? 'footer green' : 'footer violet'">
+        <a class="btn" routerLink="./home/solo/{{cardGame.titre}}">Jouer</a>
+        <span class="vertical"></span>
+        <a class="btn" (click)="rules('cardGame.titre')">Règles</a>
+      </div>
+    </div>
+  </div>
+</div>

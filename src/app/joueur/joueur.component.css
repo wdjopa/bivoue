@@ -6,3 +6,70 @@ app-carte{
 app-carte:hover{
     width: 7rem;
 }
+
+.pick{
+    transition: all .1s ease;
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.pick .cover{
+    background: rgba(250,250,250,0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+.pick .container{
+    z-index: 2;
+    position: relative;
+    width: 40%;
+    height: 70%;
+    background: white;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+    box-sizing: border-box;
+    font-family: "Lato";
+}
+.pick .container .titre{
+    display: flex;
+    height: 20%;
+    justify-content: center;
+    align-items: center;
+}
+.pick .container .motifs{
+    display: flex;
+    height: 80%;
+    justify-content: space-around;
+    align-items: center;
+    overflow: auto;
+    flex-wrap: wrap;
+}
+.pick .container .motifs .motif{
+    width: 45%;
+    height: 45%;
+    border: 2px dashed transparent;
+    padding: 1rem;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: all .4s ease;
+}
+.pick .container .motifs .motif:hover{
+    border: 2px dashed red;
+}
+.pick .container .motifs img{
+    height: 100%;
+}

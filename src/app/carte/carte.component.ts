@@ -8,7 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class CarteComponent implements OnInit {
 
   @Input() number: string;
-  @Input() color: string;
+  @Input() motif: string;
 
   constructor() { }
 

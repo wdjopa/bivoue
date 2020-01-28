@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PlateauService } from '../services/plateau.service';
 
 @Component({
   selector: 'app-pioche',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PiocheComponent implements OnInit {
 
-  constructor() { }
+  constructor(private plateauService : PlateauService) { }
 
   ngOnInit() {
+  }
+
+  pioche = (n) => {
+    if(this.plateauService.generateNCards(n))
+      this.plateauService.emitCardsSubject();
   }
 
 }

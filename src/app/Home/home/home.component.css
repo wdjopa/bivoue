@@ -1,0 +1,191 @@
+
+.containerA{
+    background-image: url("../../../assets/Cartes/autres/bg.jpg");
+    height: 100vh;
+    width: 100vw;
+}
+
+/**
+---- HEADER
+*/
+header{
+    width: 100vw;
+    height: 10vh;
+    overflow: hidden;
+    padding: 0 2rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-end;
+    background: #00000055;
+}
+
+header .nav_main
+{
+    width: 50%;
+    height: 100%;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 0 1rem;
+}
+
+header .nav_main .about_us
+{
+    padding: 0.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    height: 50%;
+    font-family: "baumans","Bradley Hand ITC","papyrus";
+    cursor: pointer;
+    position: relative;
+}
+header .nav_main .about_us::before{
+    content: "";
+    position: absolute;
+    left: 50%;
+    width: 0;
+    bottom: 0;
+    height: 1px;
+    background: white;
+    border-radius: 2rem;
+    transition: all .21s ease;
+
+}
+header .nav_main .about_us:hover::before{
+    width: 50%;
+}
+header .nav_main .about_us::after{
+    content: "";
+    position: absolute;
+    right: 50%;
+    width: 0;
+    bottom: 0;
+    height: 1px;
+    background: white;
+    border-radius: 2rem;
+    transition: all .1s ease;
+
+}
+header .nav_main .about_us:hover::after{
+    width: 50%;
+}
+
+
+/**
+---- SECTION
+*/
+section{
+    width: 100vw;
+    height: 80vh;
+    overflow: hidden;
+    background: #00000055;
+}
+section .nav-menu
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Belgrano', serif;
+    height: 100%;
+}
+
+section .nav-title
+{
+    display: inline-block;
+    font-size: 5rem;
+    text-align: center;
+    color: #EEEEEE;
+    font-family:  "belgrano","Arial Narrow";
+}
+
+section .list-group{
+    width: 30rem;
+    flex-direction: column;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 3rem;
+    box-sizing: border-box;
+}
+.list-item {
+    height: 4rem;
+    width: 80% ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 2rem;
+    border-radius: 4px;
+    margin: 1rem;
+    background: #25BE59;
+    overflow: hidden;
+    color: white;
+    text-decoration: none;
+    font-family: 'Audiowide', cursive;
+
+}
+.title-multijoueur, .title_solo, .title-setting
+{
+    width: 60%;
+    float: right;
+    text-align: left;
+    font-size: 22px;
+}
+.icon_multijoueur{
+    display: inline-block;
+    background: #FFFFFF;
+}
+.icons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.icons img{
+    border-radius: 25px;
+    height: 50%;
+}
+
+  
+/**
+---- FOOTER
+*/
+footer{
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #00000055;
+}
+.bar
+{
+    display: inline-block;
+    background: #FFFFFF;
+    width: 30%;
+    height: 1px;
+}
+.copyright
+{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: #ccc;
+    width:100%;
+    font-family:  "baumans","Arial Narrow";
+}
+.copyright a
+{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+}

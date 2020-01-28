@@ -25,10 +25,7 @@
     font-family: 'Baumans';
     font-size: 1.3rem;
     cursor: pointer;
-    padding: 2rem; 
+    padding: 2rem 0; 
     border-radius: 2px;
     transition: all .1s ease;
-}
-.entete .right:hover{
-    background: #ffffff11;
 }

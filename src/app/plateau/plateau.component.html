@@ -14,17 +14,17 @@
       <app-pioche></app-pioche>
     </div>
     <div class="centre">
-      <app-carte [ngClass]="{'centre':true}" [number]="'J'" [color]="'d'"></app-carte>
+      <app-carte [ngClass]="{'centre':true}" [number]="this.cardCentre.number" [motif]="this.cardCentre.motif"></app-carte>
     </div>
     <div></div>
   </div>
   
   <div class="joueur">
-    <div class="arrow left">
+    <div class="arrow left" (click)="goLeft()">
       <img style="transform: rotate(180deg)" src="../../assets/img/arrow.svg" alt="">
     </div>
     <app-joueur></app-joueur>
-    <div class="arrow right">
+    <div class="arrow right" (click)="goRight()">
       <img src="../../assets/img/arrow.svg" alt="">
     </div>
   </div>

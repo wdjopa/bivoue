@@ -1,0 +1,23 @@
+<div class="game">
+
+  <header class="header">
+    <app-header [back]="'Retour'" [titre]="'Solo'"></app-header>
+  </header>
+  <div class="containerA">
+    <div class="entete">
+      <div class="section_search">
+        <div class="title-page">Selectionnez un jeu ...</div>
+        <div class="search_box">
+          <input type="search" placeholder="Recherchez un jeu" name="" id="">
+          <button><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+            width="24" height="24"
+            viewBox="0 0 192 192"
+            style=" fill:#fff;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="none" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,192v-192h192v192z" fill="none" stroke="none" stroke-width="1"></path><g id="Two-Tone"><g fill="#ffff" stroke="none" stroke-width="1"><path d="M176,160l-16,16l-48,-48v-16h16z"></path></g><path d="M24,72c0,-26.50967 21.49033,-48 48,-48c26.50967,0 48,21.49033 48,48c0,26.50967 -21.49033,48 -48,48c-26.50967,0 -48,-21.49033 -48,-48z" fill="none" stroke="#fff" stroke-width="16"></path><path d="M104,104l20,20" fill="none" stroke="#fff" stroke-width="1"></path></g></g></svg></button>
+        </div>
+      </div>
+    </div>
+    <div class="content-games">          
+        <app-card-game [mode]="'solo'"></app-card-game>
+    </div>
+  </div>
+</div>

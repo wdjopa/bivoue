@@ -1,0 +1,273 @@
+*{
+    font-family: 'Audiowide', cursive;
+}
+.game {
+    background: url("../../../assets/Cartes/autres/bg.jpg");
+    background-size: cover;
+}
+
+.header {
+    height: 13vh;
+    width: 100%;
+    background: #25BE59;
+    padding: 0 5rem;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+app-header {
+    align-items: center;
+    display: flex;
+    width: 100%;
+}
+
+.containerA {
+    padding: 0 5rem;
+    min-height: 87vh;
+    background: #00000077;
+}
+
+.entete {
+    height: 15vh;
+    border-bottom: 1px solid white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.entete .section_search {
+    font-family: 'Baumans';
+    font-size: 1.5rem;
+    font-weight: 100;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+}
+
+.search_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Audiowide', cursive;
+}
+
+
+.search_box input[type=search] {
+    background: #FFFFFF44;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    font-size: 20px;
+    padding: 0.4rem 1rem;
+    margin-right: 1rem;
+}
+
+.search_box button {
+    cursor: pointer;
+    background: #25BE59;
+    border-radius: 3px;
+    color: #FFFFFF;
+    border: 2px solid #25BE59;
+    height: 100%;
+    width: 3rem;
+    overflow: hidden;
+}
+.search_box button svg {
+    width: 50%;
+}
+
+/*
+
+
+
+
+
+
+
+.line
+{
+    width: 100%;
+}
+.section_search
+{
+    display: inline-block;
+    width: 100%;
+    height:80px;
+}
+.title-page
+{
+    margin-top:30px;
+    display: inline-block;
+}
+.search_box
+{
+    float: right;
+    vertical-align: bottom;
+}
+.search_box input[type=search]{
+    background: rgba(255, 255, 255, 0.6);
+    width: 382px;
+    height: 40px;
+    margin-top: 25px;
+    border:none;
+    border-radius: 3px;
+    font-size: "audiowide";
+    color: #FFFFFF;
+    font-size: 20px;
+    line-height: 40px;
+    vertical-align: bottom;
+}
+
+
+.search_box input[type=button]{
+    width: 59px;
+height: 40px;
+border: none;
+cursor: pointer;
+background: #25BE59;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 3px;
+color: #FFFFFF;
+line-height: 40px;
+
+}
+
+.card
+{
+    width: 22%;
+    margin-top: 40px;
+    text-align: center;
+    min-height: 350px;
+    border-radius: 44px;
+    background-image:url('../../../assets/Cartes/autres/bg.jpg') ;
+
+}
+.card_content
+{
+    display: inline-block;
+    background: rgba(15, 15, 15, 0.1);
+    color: black;
+    height: 90%;
+    width: 100%;
+    height: 300px;
+    border-radius: 41px 41px 0px 0px;
+}
+.title_card
+{
+    margin: 15%;
+    margin-bottom: 20%;
+    font-size: 27px;
+    text-align: left;
+}
+
+
+.nav-menu
+{
+    display:inline-block;
+    margin-top:100px;
+    width: 50%;
+    margin-left: 25%;
+    text-align: center;
+    opacity: 1;
+
+}
+
+.nav-title
+{
+
+    display: inline-block;
+    font-size: 60px;
+    text-align: center;
+    color: #EEEEEE;
+    font-family:  "Arial Narrow";
+
+}
+
+.icon_solo
+{
+    display: inline-block;
+
+background: #FFFFFF
+}
+
+.title_solo
+{
+    display: inline-block;
+    font-weight: 60px;
+    font-size: 32px;
+    color: #FFFFFF;
+    font-family: "baumans";
+}
+.list-group-option{
+    list-style-type: none;
+
+
+}
+.list-option-item
+{
+    text-align: left;
+    width: 49%;
+    margin-left: 75%;
+   display: block;
+}
+
+.card_footer
+{
+    width: 289px;
+    height: 60px;
+    background: #25BE59;
+    border-radius: 0px 0px 41px 41px;
+    display: inline-block;
+    width: 100%;
+    vertical-align:bottom;
+    padding-bottom: 0px;
+
+
+}
+.btn-footer-solo
+{
+  width: 100px;
+  height: 48px;
+  left: 75px;
+  font-size: 19px;
+  text-align: center;
+  background: #25BE59;
+  border:none;
+  cursor: pointer;
+  color: #FFFFFF;
+  border-radius: 20px;
+  font-family: "audiowide";
+}
+
+.btn-footer-solo :hover
+{
+    opacity: 0.5;
+}
+
+.contentA
+{
+    margin: 5rem;
+    margin-top: 0px;
+}
+.icons
+{
+  text-align: left;
+  display: inline-block;
+  height: inherit;
+  width: 20%;
+  margin-right: 0px;
+
+}
+
+.icons img{
+  color:#FFFFFF;
+  height: 50px;
+  line-height: inherit;
+  margin-top: 10px;
+  display: inline-block;
+  width: 50px;
+  border-radius: 25px;
+}
+
+
+*/
